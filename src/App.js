@@ -8,7 +8,7 @@ import "./App.css"
 function App(){
   const [cart,setCart] = useState([]);
   const addtocart = (product) => {
-    setCart([]);
+    setCart([...cart, product]);
     alert("Thank you for your purchase of " + product.name + " at KES " + product.price);
   };
   return (
