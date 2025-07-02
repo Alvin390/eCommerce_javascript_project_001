@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Navbar({ cartCount }) {
+function Navbar({ cartCount,user,logout }) {
     return (
         <nav className="navbar">
             <Link to="/" className="navbar-logo">Retro-Shop</Link>
@@ -8,8 +8,20 @@ function Navbar({ cartCount }) {
                 <Link to="/">Home</Link>
                 <Link to="/Products">Products</Link>
                 <Link to="/Cart">Cart ({cartCount})</Link>
-                <Link to="/Login">Login</Link>
-                <Link to="/Registration">Registration</Link>
+                {!user ?(
+                    <>
+                        <Link to="/Login">Login</Link>
+                        <Link to="/Registration">Registration</Link>
+
+                    </>
+                ):(
+                    <>
+                        <span>Welcome, {user.username }</span> | {""}
+                        <button className="btn" onClick={logout}>Logout</button>
+                    </>
+                )
+
+                }
             </div>
         </nav>
     );
