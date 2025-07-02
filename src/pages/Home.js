@@ -1,4 +1,4 @@
-import ProductCard from '../components/product_card';
+import ProductCard from '../components/Product_card';
 import products from "../products";
 
 function Home({addtocart}) {
@@ -12,7 +12,7 @@ function Home({addtocart}) {
 }
 export default Home
 
-// In src/pages/home.js
+// In src/pages/Home.js
 // import products from '../products';
 // import ProductCard from '../components/product_card';
 //

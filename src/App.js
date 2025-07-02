@@ -1,7 +1,9 @@
 import {useState} from 'react';
-import Navbar from "./components/navbar";
-import Home from "./pages/home";
-import Cart from "./pages/cart";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import "./App.css"
 
@@ -18,6 +20,8 @@ function App(){
                 <Route path="/" element={<Home addtocart={addtocart} />} />
                 <Route path="/cart" element={<Cart cart={cart} clearcart={() => setCart([])} />} />
                 <Route path="/products" element={<Home addtocart={addtocart} />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/registration" element={<Registration />} />
             </Routes>
       </Router>
 

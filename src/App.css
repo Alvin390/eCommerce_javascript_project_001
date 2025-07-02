@@ -154,3 +154,185 @@ p {
     margin-top: 0.5rem;
   }
 }
+
+/* Cart Page Styles */
+.cart-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+}
+
+.cart-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #23272f;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #f7f8fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.cart-item-price {
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-empty {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 600px) {
+  .cart-container {
+    padding: 1rem 0.5rem;
+  }
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  .cart-item-image {
+    width: 100%;
+    height: 120px;
+  }
+}
+/* Registration & Login Form Styles */
+.registration-page, .login-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: linear-gradient(135deg, #fff 70%, #f5f7fa 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 6px rgba(255,152,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.registration-page:hover, .login-form:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.13), 0 2px 8px rgba(255,152,0,0.10);
+}
+
+.registration-page h1, .login-form h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 #fff, 0 2px 8px rgba(255,152,0,0.08);
+}
+
+.registration-form, .login-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #23272f;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f7f8fa 80%, #fff 100%);
+  box-shadow: 0 1px 4px rgba(255,152,0,0.07);
+  font-size: 1rem;
+  color: #23272f;
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.form-group input:focus {
+  background: #fffbe7;
+  box-shadow: 0 2px 8px rgba(255,152,0,0.15);
+}
+
+.registration-form button, .login-form .btn, .registration-form .btn {
+  width: 100%;
+  padding: 0.9rem 0;
+  background: linear-gradient(90deg, #ff9800 60%, #ffb347 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,152,0,0.13);
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 0.5rem;
+}
+
+.registration-form button:hover, .login-form .btn:hover, .registration-form .btn:hover {
+  background: linear-gradient(90deg, #e68900 60%, #ff9800 100%);
+  box-shadow: 0 4px 16px rgba(255,152,0,0.18);
+}
+
+@media (max-width: 500px) {
+  .registration-page, .login-form {
+    padding: 1.2rem 0.5rem;
+  }
+}

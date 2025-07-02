@@ -6,8 +6,10 @@ function Navbar({ cartCount }) {
             <Link to="/" className="navbar-logo">Retro-Shop</Link>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
-                <Link to="/products">Products</Link>
-                <Link to="/cart">Cart ({cartCount})</Link>
+                <Link to="/Products">Products</Link>
+                <Link to="/Cart">Cart ({cartCount})</Link>
+                <Link to="/Login">Login</Link>
+                <Link to="/Registration">Registration</Link>
             </div>
         </nav>
     );
